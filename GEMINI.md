@@ -1,7 +1,7 @@
-This is an AI-assisted project. Gemini is helping, and these are the instructions for it to do so.
+This is a simple website, so keep it as simple as possible.
 
-This is a simple static website. You can see the project files and test them by opening the `index.html` file in a browser.
+Since the content is stored in data.json you need a basic web server to test the website locally (python3 -m http.server 8000).
 
-The main goal is to have a personal website with a curated list of resources. The data is in the `data.json` file.
+Before doing any change make sure the files are commited so that changes can be reverted easily.
 
 When you are asked to add new content, you should edit the `data.json` file and add a new entry to the corresponding category. If the category does not exist, you should create it.

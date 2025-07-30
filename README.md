@@ -1,10 +1,6 @@
 # Cognitionis
 
-Cognitionis is a personal website project that serves as a curated collection of resources and information on various technical topics. The site is designed to be a simple, single-page application that dynamically loads content from a JSON file.
-
-## About
-
-The primary goal of Cognitionis is to provide a clean and organized platform for presenting information related to Artificial Intelligence, Python programming, Vim editor configurations, and Jenkins automation. The website features a minimalist design with a focus on readability and ease of navigation.
+[https://cognitionis.com](https://cognitionis.com) is a collection of articles and YouTube videos on tech topics.
 
 ## Features
 
@@ -15,10 +11,14 @@ The primary goal of Cognitionis is to provide a clean and organized platform for
 
 ## Technologies Used
 
+Single-page application that dynamically loads content from a JSON file.
 - **HTML5:** The basic structure of the website.
 - **CSS3:** For styling and layout, ensuring a clean and modern look.
 - **JavaScript (ES6):** To fetch and dynamically render the content from the JSON file.
-- **JSON:** As the data source for the website's content.
+
+## Deployment
+
+The site is deployed using [Netlify](https://cognitionis-website.netlify.app) as hosting and using this github repository.
 
 ## Project Structure
 
@@ -28,9 +28,9 @@ The primary goal of Cognitionis is to provide a clean and organized platform for
 - `data.json`: The JSON file containing the website's data.
 - `README.md`: This file, providing an overview of the project.
 
-## How to Use
+## How to Test Locally
 
-To view the website, you need to run a simple web server due to browser security policies (CORS). 
+To view the website, you need to run a simple web server due to browser security policies (CORS).
 
 1. Open a terminal in the project's root directory.
 2. Run the following command:
@@ -44,9 +44,7 @@ python3 -m http.server 8000
 ## Future Enhancements
 
 - **Search Functionality:** Adding a search bar to filter the content.
-- **More Content:** Expanding the collection of resources and topics.
 - **Improved Styling:** Enhancing the visual design and user experience.
 
 ---
 
-*This README was generated with the assistance of Gemini.*

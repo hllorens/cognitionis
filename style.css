@@ -33,6 +33,38 @@ main {
     padding: 2rem;
 }
 
+#controls {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#search {
+    width: 200px;
+    padding: 0.5rem;
+}
+
+#category-filter {
+    padding: 0.5rem;
+}
+
+#pagination {
+    margin-top: 1rem;
+}
+
+#pagination button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#pagination button:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
