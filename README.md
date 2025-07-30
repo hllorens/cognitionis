@@ -30,7 +30,16 @@ The primary goal of Cognitionis is to provide a clean and organized platform for
 
 ## How to Use
 
-To view the website, simply open the `index.html` file in a web browser. The content will be loaded automatically from the `data.json` file.
+To view the website, you need to run a simple web server due to browser security policies (CORS). 
+
+1. Open a terminal in the project's root directory.
+2. Run the following command:
+
+```bash
+python3 -m http.server 8000
+```
+
+3. Open your web browser and navigate to `http://localhost:8000`.
 
 ## Future Enhancements
 
