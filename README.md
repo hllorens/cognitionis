@@ -9,17 +9,6 @@
 - **Responsive Design:** The layout is designed to be responsive and accessible on different devices.
 - **External Links:** The header includes links to my LinkedIn and GitHub profiles for further professional connection.
 
-## Technologies Used
-
-Single-page application that dynamically loads content from a JSON file.
-- **HTML5:** The basic structure of the website.
-- **CSS3:** For styling and layout, ensuring a clean and modern look.
-- **JavaScript (ES6):** To fetch and dynamically render the content from the JSON file.
-
-## Deployment
-
-The site is deployed using [Netlify](https://cognitionis-website.netlify.app) as hosting and using this github repository.
-
 ## Project Structure
 
 - `index.html`: The main HTML file.
@@ -41,9 +30,42 @@ python3 -m http.server 8000
 
 3. Open your web browser and navigate to `http://localhost:8000`.
 
+### Advanced How to Test Locally
+
+To run the server in the background, capture the process ID (PID), and log the output for debugging, follow these steps:
+
+1. **Run in the background and log output:**
+   ```bash
+   nohup python3 -m http.server 8000 > server.log 2>&1 &
+   ```
+   This command will keep the server running even if you close the terminal (`nohup`) and redirect all output to `server.log`.
+
+2. **Capture the PID:**
+   ```bash
+   echo $! > server.pid
+   ```
+   This saves the PID of the last background process to a file named `server.pid`.
+
+3. **Stop the server:**
+   ```bash
+   kill $(cat server.pid)
+   ```
+   This command reads the PID from `server.pid` and stops the server process.
+
+
+## Technologies Used
+
+Single-page application that dynamically loads content from a JSON file.
+- **HTML5:** The basic structure of the website.
+- **CSS3:** For styling and layout, ensuring a clean and modern look.
+- **JavaScript (ES6):** To fetch and dynamically render the content from the JSON file.
+
+## Deployment
+
+The site is deployed using [Netlify](https://cognitionis-website.netlify.app) as hosting and using this github repository.
+
 ## Future Enhancements
 
-- **Search Functionality:** Adding a search bar to filter the content.
 - **Improved Styling:** Enhancing the visual design and user experience.
 
 ---
