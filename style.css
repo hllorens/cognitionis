@@ -1,6 +1,6 @@
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #f0f0f0;
+    color: #121212;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ccc;
 }
 
 header h1 {
@@ -20,13 +20,13 @@ header h1 {
 }
 
 header nav a {
-    color: #e0e0e0;
+    color: #121212;
     text-decoration: none;
     margin-left: 1rem;
 }
 
 header nav a:hover {
-    color: #fff;
+    color: #000;
 }
 
 main {
@@ -36,7 +36,7 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
-    border-top: 1px solid #333;
+    border-top: 1px solid #ccc;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -48,7 +48,7 @@ footer {
 
 .category h2 {
     font-size: 1.2rem;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 0.5rem;
 }
 
