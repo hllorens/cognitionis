@@ -7,6 +7,12 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,9 +37,18 @@ header nav a:hover {
 
 main {
     padding: 2rem;
+    margin-top: 120px; /* Adjust based on header and controls height */
 }
 
 #controls {
+    position: fixed;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 1rem;
     display: flex;
     gap: 1rem;
@@ -101,4 +116,10 @@ footer {
     width: 100%;
     max-width: 560px;
     height: 315px;
+}
+
+.category-label {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
 }
