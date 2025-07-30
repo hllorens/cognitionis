@@ -1,0 +1,44 @@
+{
+    "categories": [
+        {
+            "name": "AI",
+            "entries": [
+                {
+                    "title": "The Rise of Large Language Models",
+                    "description": "An overview of the impact of LLMs on the tech industry.",
+                    "youtubeId": "zjkBMFhNj_g"
+                }
+            ]
+        },
+        {
+            "name": "Python",
+            "entries": [
+                {
+                    "title": "Modern Python Development",
+                    "description": "A look into the tools and techniques for building robust Python applications.",
+                    "youtubeId": "bS_a_iI5g8k"
+                }
+            ]
+        },
+        {
+            "name": "Jenkins",
+            "entries": [
+                {
+                    "title": "Jenkins CI/CD Pipelines",
+                    "description": "How to set up a CI/CD pipeline with Jenkins.",
+                    "youtubeId": "7KCS70sCoK0"
+                }
+            ]
+        },
+        {
+            "name": "Vim",
+            "entries": [
+                {
+                    "title": "Vim for Modern Development",
+                    "description": "Tips and tricks for using Vim in 2025.",
+                    "youtubeId": "gnupOrSEikQ"
+                }
+            ]
+        }
+    ]
+}

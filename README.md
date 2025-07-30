@@ -1,2 +1,2 @@
 # cognitionis
-Learning and having fun
+Website about AI, Python, Vim and Jenkins
