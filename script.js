@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!selectedCategory || selectedCategory === category.name) {
                 category.entries.forEach(entry => {
                     if (entry.title.toLowerCase().includes(searchTerm) || entry.description.toLowerCase().includes(searchTerm)) {
-                        filteredEntries.push({ ...entry, category: category.name });
+                        filteredEntries.push(entry);
                     }
                 });
             }
@@ -60,11 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const entryTitle = document.createElement('h3');
             entryTitle.textContent = entry.title;
             entryDiv.appendChild(entryTitle);
-
-            const entryCategory = document.createElement('p');
-            entryCategory.classList.add('category-label');
-            entryCategory.textContent = `Category: ${entry.category}`;
-            entryDiv.appendChild(entryCategory);
 
             const entryDescription = document.createElement('p');
             entryDescription.textContent = entry.description;
