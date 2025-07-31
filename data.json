@@ -14,9 +14,9 @@
             "name": "Python",
             "entries": [
                 {
-                    "title": "Modern Python Development",
-                    "description": "A look into the tools and techniques for building robust Python applications.",
-                    "youtubeId": "bS_a_iI5g8k"
+                    "title": "Python for Beginners – Full Course [Programming Tutorial]",
+                    "description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the videos and you'll be a python programmer in no time!",
+                    "youtubeId": "eWRfhZUzrAc"
                 }
             ]
         },
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "name": "money",
+            "name": "Money",
             "entries": [
                 {
                     "title": "How The Economic Machine Works by Ray Dalio",
