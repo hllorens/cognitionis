@@ -141,6 +141,10 @@ footer {
     color: #000;
 }
 
+.footer-separator {
+    margin: 0 0.5rem;
+}
+
 .category {
     margin-bottom: 2rem;
 }
