@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById('content');
     const searchInput = document.getElementById('search');
-    const categoryFilter = document.getElementById('category-filter');
     const pagination = document.getElementById('pagination');
 
     let data = {};
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
-            populateCategories();
             renderContent();
         });
 
@@ -20,34 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPage = 1;
         renderContent();
     });
-    categoryFilter.addEventListener('change', () => {
-        currentPage = 1;
-        renderContent();
-    });
-
-    function populateCategories() {
-        data.categories.forEach(category => {
-            const option = document.createElement('option');
-            option.value = category.name;
-            option.textContent = category.name;
-            categoryFilter.appendChild(option);
-        });
-    }
 
     function renderContent() {
         content.innerHTML = '';
         const searchTerm = searchInput.value.toLowerCase();
-        const selectedCategory = categoryFilter.value;
 
         let filteredEntries = [];
         data.categories.forEach(category => {
-            if (!selectedCategory || selectedCategory === category.name) {
-                category.entries.forEach(entry => {
-                    if (entry.title.toLowerCase().includes(searchTerm) || entry.description.toLowerCase().includes(searchTerm)) {
-                        filteredEntries.push(entry);
-                    }
-                });
-            }
+            const categoryName = category.name.toLowerCase();
+            category.entries.forEach(entry => {
+                if (entry.title.toLowerCase().includes(searchTerm) || 
+                    entry.description.toLowerCase().includes(searchTerm) ||
+                    categoryName.includes(searchTerm)) {
+                    filteredEntries.push(entry);
+                }
+            });
         });
 
         const totalPages = Math.ceil(filteredEntries.length / itemsPerPage);

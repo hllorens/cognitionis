@@ -34,19 +34,13 @@ python3 -m http.server 8000
 
 To run the server in the background, capture the process ID (PID), and log the output for debugging, follow these steps:
 
-1. **Run in the background and log output:**
+1. **Run in the background, log output and capture the PID:**
    ```bash
-   nohup python3 -m http.server 8000 > server.log 2>&1 &
+   nohup python3 -m http.server 8000 > server.log 2>&1 & echo $! > server.pid
    ```
-   This command will keep the server running even if you close the terminal (`nohup`) and redirect all output to `server.log`.
+   This command will keep the server running even if you close the terminal (`nohup`), redirect all output to `server.log` and saves the PID of the last background process to a file named `server.pid`.
 
-2. **Capture the PID:**
-   ```bash
-   echo $! > server.pid
-   ```
-   This saves the PID of the last background process to a file named `server.pid`.
-
-3. **Stop the server:**
+2. **Stop the server:**
    ```bash
    kill $(cat server.pid)
    ```

@@ -14,15 +14,40 @@ header {
     background-color: #f0f0f0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 1rem 2rem;
     border-bottom: 1px solid #ccc;
 }
 
+#header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    margin-left: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #121212;
+}
+
+.social-icon:hover svg {
+    fill: #000;
 }
 
 header nav a {
@@ -37,16 +62,13 @@ header nav a:hover {
 
 @media (min-width: 768px) {
     header {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    #controls {
-        position: static;
-        border: none;
-        padding: 0;
-        margin: 0;
+    #header-right {
+        margin-top: 0;
     }
 
     main {
