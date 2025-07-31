@@ -39,6 +39,16 @@
                     "youtubeId": "gnupOrSEikQ"
                 }
             ]
+        },
+        {
+            "name": "money",
+            "entries": [
+                {
+                    "title": "How The Economic Machine Works by Ray Dalio",
+                    "description": "An animated explanation of the forces that drive the economy, by Ray Dalio.",
+                    "youtubeId": "PHe0bXAIuk0"
+                }
+            ]
         }
     ]
 }
