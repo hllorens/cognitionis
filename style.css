@@ -132,8 +132,12 @@ footer {
     z-index: 1000;
 }
 
-#subscribe {
+footer a {
     color: #000;
+}
+
+#subscribe {
+    color: #121212;
     text-decoration: none;
 }
 
