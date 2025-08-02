@@ -231,3 +231,11 @@ footer a {
     font-size: 0.9rem;
     color: #555;
 }
+
+@media (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
