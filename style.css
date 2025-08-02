@@ -77,8 +77,8 @@ header nav a:hover {
 }
 
 main {
-    padding: 1rem 2rem;
-    margin-top: 120px; /* Adjust based on header and controls height */
+    padding: 0.25rem 2rem;
+    margin-top: 120px;
 }
 
 #controls {
