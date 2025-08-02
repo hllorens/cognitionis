@@ -79,4 +79,24 @@ document.addEventListener('DOMContentLoaded', () => {
             pagination.appendChild(button);
         }
     }
+
+    // Contact Modal
+    const contactModal = document.getElementById('contact-modal');
+    const contactLink = document.getElementById('contact');
+    const closeButton = document.querySelector('.close-button');
+
+    contactLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        contactModal.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', () => {
+        contactModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target == contactModal) {
+            contactModal.style.display = 'none';
+        }
+    });
 });
