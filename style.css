@@ -60,6 +60,11 @@ header nav a:hover {
     color: #000;
 }
 
+main {
+    padding: 0.25rem 2rem;
+    margin-top: 120px;
+}
+
 @media (min-width: 768px) {
     header {
         flex-direction: row;
@@ -74,11 +79,6 @@ header nav a:hover {
     main {
         margin-top: 80px;
     }
-}
-
-main {
-    padding: 0.25rem 2rem;
-    margin-top: 120px;
 }
 
 #controls {
