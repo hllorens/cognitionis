@@ -38,13 +38,18 @@ To run the server in the background, capture the process ID (PID), and log the o
    ```bash
    nohup python3 -m http.server 8000 > server.log 2>&1 & echo $! > server.pid
    ```
-   This command will keep the server running even if you close the terminal (`nohup`), redirect all output to `server.log` and saves the PID of the last background process to a file named `server.pid`.
+   This command or `./start_server.sh` will keep the server running even if you close the terminal (`nohup`), redirect all output to `server.log` and saves the PID of the last background process to a file named `server.pid`.
+
+   Check the status with
+   ```bash
+   ./server_status.sh
+   ```
 
 2. **Stop the server:**
    ```bash
    kill $(cat server.pid)
    ```
-   This command reads the PID from `server.pid` and stops the server process.
+   This command or `./stop_server.sh` reads the PID from `server.pid` and stops the server process.
 
 
 ## Technologies Used
@@ -61,16 +66,4 @@ The site is deployed using [Netlify](https://cognitionis-website.netlify.app) as
 ## Future Enhancements
 
 - **Improved Styling:** Enhancing the visual design and user experience.
-
-## Server Status
-
-To check if the server is running, you can use the `server_status.sh` script:
-
-```bash
-./server_status.sh
-```
-
-This will output "Server is running." if the server is active, and "Server is not running." otherwise.
-
----
 
