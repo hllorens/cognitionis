@@ -38,7 +38,7 @@ To run the server in the background, capture the process ID (PID), and log the o
    ```bash
    nohup python3 -m http.server 8000 > server.log 2>&1 & echo $! > server.pid
    ```
-   This command or `./start_server.sh` will keep the server running even if you close the terminal (`nohup`), redirect all output to `server.log` and saves the PID of the last background process to a file named `server.pid`.
+   This command or `./server_start.sh` will keep the server running even if you close the terminal (`nohup`), redirect all output to `server.log` and saves the PID of the last background process to a file named `server.pid`.
 
    Check the status with
    ```bash
@@ -49,7 +49,7 @@ To run the server in the background, capture the process ID (PID), and log the o
    ```bash
    kill $(cat server.pid)
    ```
-   This command or `./stop_server.sh` reads the PID from `server.pid` and stops the server process.
+   This command or `./server_stop.sh` reads the PID from `server.pid` and stops the server process.
 
 
 ## Technologies Used
