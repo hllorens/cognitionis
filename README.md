@@ -62,5 +62,15 @@ The site is deployed using [Netlify](https://cognitionis-website.netlify.app) as
 
 - **Improved Styling:** Enhancing the visual design and user experience.
 
+## Server Status
+
+To check if the server is running, you can use the `server_status.sh` script:
+
+```bash
+./server_status.sh
+```
+
+This will output "Server is running." if the server is active, and "Server is not running." otherwise.
+
 ---
 
