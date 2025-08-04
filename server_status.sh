@@ -1,6 +1,7 @@
 #!/bin/bash
-if pgrep -f "python3 -m http.server 8000"; then
-    echo "Server is running."
+if [ -f "server.pid" ] && ps -p $(cat server.pid) > /dev/null; then
+    echo "Server is running with PID $(cat server.pid)."
+    ps -p $(cat server.pid)
 else
     echo "Server is not running."
 fi
